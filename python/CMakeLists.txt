@@ -12,3 +12,5 @@ set_target_properties(
     PROPERTIES
     LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
 )
+add_executable(allocator cpp/allocator.cpp)
+target_link_libraries(allocator PRIVATE utensor)
